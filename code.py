@@ -1,6 +1,4 @@
-# Based on code written by @DavidGlaude on Twitter
-# https://twitter.com/DavidGlaude/status/1340365817138044933
-# https://gist.github.com/dglaude/4bf8d0a13c9c8ca8b05d6c0e9176bd20
+# Uncle Paul is editing his version here!
 
 import time
 import alarm
