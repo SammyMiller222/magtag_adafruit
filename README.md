@@ -16,6 +16,22 @@ This is a fork from the original presented on [Adafruit](https://learn.adafruit.
 
 - After some constant deleting and tweaking files I ran out of the very little space available on the Magtag. Ended up using a free app called [Clean My Drive 2](https://macpaw.com/cleanmydrive). This based on a suggestion someone mentioned on [StackExchange](https://apple.stackexchange.com/questions/6707/how-to-stop-os-x-from-writing-spotlight-and-trash-files-to-memory-cards-and-usb).
 
+## Dumping this Repo onto the Magtag
+
+Until I can find someone to tell me a more efficient way here's my suggestion:
+
+1. Start over with loading [CircuitPython](https://learn.adafruit.com/adafruit-magtag-project-selector/install-circuitpython)
+
+    a. Hit the reset button twice.
+    b. You should see `MAGTAGBOOT` in Finder.
+    c. Dump that `adafruit-circuitpython-adafruit_magtag_2.9_grayscale-en_US-x.x.x.uf2` file onto `MAGTAGBOOT`.
+    d. You might see a normal erroo, but `CIRCUITPY` should show up in Finder.
+
+2. Copy the repo files and directory one at a time.
+3. Use [Clean My Drive 2](https://macpaw.com/cleanmydrive) between copies.
+
+Sadly this device has only about __1 MB__ of on-board storage, so slowly copying things over are required as there appears to be __*junk*__ and temporary files generated if you try a quick dump.
+
 ### How to Use Magtag 
 
 I did not understand the instructions on the website and really have to read through some of the code.
