@@ -14,6 +14,8 @@ This is a fork from the original presented on [Adafruit](https://learn.adafruit.
 
 - Some of these apps can and *WILL BE* changed to something more useful. Consider this the *Beta* version.
 
+- After some constant deleting and tweaking files I ran out of the very little space available on the Magtag. Ended up using a free app called [Clean My Drive 2](https://macpaw.com/cleanmydrive). This based on a suggestion someone mentioned on [StackExchange](https://apple.stackexchange.com/questions/6707/how-to-stop-os-x-from-writing-spotlight-and-trash-files-to-memory-cards-and-usb).
+
 ### How to Use Magtag 
 
 I did not understand the instructions on the website and really have to read through some of the code.
