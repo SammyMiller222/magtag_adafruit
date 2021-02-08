@@ -10,14 +10,14 @@ from adafruit_magtag.magtag import Graphics
 from digitalio import DigitalInOut, Direction, Pull
 
 projects = [
-    "weather",
-    "spacex",
     "covid",
-    "showerthoughts",
-    "tides",
+    "weather",
     "year",
-    "showtimes",
+    "showerthoughts",
     "slideshow",
+    "spacex",
+    "tides",
+    "showtimes",
 ]
 
 btnA = DigitalInOut(board.D15)
