@@ -7,7 +7,7 @@ from adafruit_magtag.magtag import MagTag
 from secrets import secrets
 
 # --| USER CONFIG |--------------------------
-METRIC = False  # set to True for metric units
+METRIC = True  # set to True for metric units
 # -------------------------------------------
 
 # ----------------------------

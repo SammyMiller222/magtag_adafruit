@@ -8,7 +8,7 @@ from adafruit_magtag.magtag import MagTag
 
 # --| USER CONFIG |--------------------------
 STATION_ID = (
-    "9447130"  # tide location, find yours here: https://tidesandcurrents.noaa.gov/
+    "9414290"  # tide location, find yours here: https://tidesandcurrents.noaa.gov/
 )
 METRIC = False  # set to True for metric units
 VSCALE = 2  # pixels per ft or m
