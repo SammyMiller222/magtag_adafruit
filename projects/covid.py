@@ -119,7 +119,7 @@ try:
     magtag.set_text(f"Last:   {vaccine_data['last']:,}", 2, False)
     magtag.set_text(f"Population:  {POPULATION}", 3, False)
     magtag.set_text(f"Fully Total:   {vaccine_data['total']:,}", 4, False)
-    magtag.set_text(f"Percent:   {vaccine_data['percent']:.2f}%", 5, False)
+    magtag.set_text(f"Fully Percent:   {vaccine_data['percent']:.2f}%", 5, False)
 
 
     now = time.localtime()
