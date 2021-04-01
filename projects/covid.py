@@ -41,7 +41,7 @@ def parse_csv(raw_data):
     # intialize output dictionary
     vaccine_data = {}
     vaccine_data['date'] = raw_data[-2].split(',')[1]
-    vaccine_data['total'] = int(data[-1][0])
+    vaccine_data['total'] = int(data[-1][2])
     vaccine_data['last'] = int(data[-1][0]) - int(data[-2][0])
     vaccine_data['percent'] = (vaccine_data['total']/POPULATION) * 100
 
@@ -59,33 +59,33 @@ magtag = MagTag(url=DATA_SOURCE)
 # Title
 magtag.add_text(
     text_font="/fonts/Arial-Bold-12.pcf",
-    text_position=(10, 15),
+    text_position=(10, 10),
 )
 
 # Date stamp of info
 magtag.add_text(
     text_font="/fonts/Arial-Bold-12.pcf",
-    text_position=(10, 35),
+    text_position=(10, 40),
 )
 # Number vaccinated on last recorded date
 magtag.add_text(
     text_font="/fonts/Arial-Bold-12.pcf",
-    text_position=(10, 55),
+    text_position=(10, 60),
 )
-# 7 Day Average
+# Population
 magtag.add_text(
     text_font="/fonts/Arial-Bold-12.pcf",
-    text_position=(10, 75),
+    text_position=(10, 80),
 )
 # Total Vaccinated
 magtag.add_text(
     text_font="/fonts/Arial-Bold-12.pcf",
-    text_position=(10, 95),
+    text_position=(10, 100),
 )
 # Percent of Population Vaccinated
 magtag.add_text(
     text_font="/fonts/Arial-Bold-12.pcf",
-    text_position=(10, 115),
+    text_position=(10, 120),
 )
 
 
@@ -115,10 +115,10 @@ try:
 
     print(vaccine_data)
     magtag.set_text("Canada Vaccinations", 0, False)
-    magtag.set_text("", 1, False)
-    magtag.set_text(f"Date:   {vaccine_data['date']}", 2, False)
-    magtag.set_text(f"Last:   {vaccine_data['last']:,}", 3, False)
-    magtag.set_text(f"Total:   {vaccine_data['total']:,}", 4, False)
+    magtag.set_text(f"Date:   {vaccine_data['date']}", 1, False)
+    magtag.set_text(f"Last:   {vaccine_data['last']:,}", 2, False)
+    magtag.set_text(f"Population:  {POPULATION}", 3, False)
+    magtag.set_text(f"Fully Total:   {vaccine_data['total']:,}", 4, False)
     magtag.set_text(f"Percent:   {vaccine_data['percent']:.2f}%", 5, False)
 
 
