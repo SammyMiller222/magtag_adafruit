@@ -38,7 +38,7 @@ def parse_csv(raw_data):
 
 
 
-    # intialize output dictionary
+    # initialize output dictionary
     vaccine_data = {}
     vaccine_data['date'] = raw_data[-2].split(',')[1]
     vaccine_data['total'] = int(data[-1][2])
@@ -133,7 +133,7 @@ try:
     # OK we're done!
     magtag.peripherals.neopixels.fill(0x000F00) # greten
 except (ValueError, RuntimeError) as e:
-    print("Some error occured, trying again later -", e)
+    print("Some error occurred, trying again later -", e)
 
 time.sleep(2) # let screen finish updating
 
