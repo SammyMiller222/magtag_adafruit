@@ -2,11 +2,11 @@
 
 This is a fork from the original presented on [Adafruit](https://learn.adafruit.com/adafruit-magtag-project-selector).
 
-### Notes on Setup
+## Notes on Setup
 
 - That `.gitignore` file is very important and something I originally forgot to add. It tells which file not to share in your repo. In our case we do not want our WI-FI information online via the `secrets.py` file. 🤦
 
-- Some of the projects use online Application Programming Interfaces (APIs). Which is a fancy way of saying a way to access something, usually data. Some of these APIs require setting up a free account and generating keys. This includes: `'openweather_token'` and ` 'openweather_location'`.
+- Some of the projects use online Application Programming Interfaces (APIs). Which is a fancy way of saying a way to access something, usually data. Some of these APIs require setting up a free account and generating keys. This includes: `'openweather_token'` and `'openweather_location'`.
 
 - Some of the data and setup is customized to how *I like it*! e.g. The weather app is using `Barrie, CA` and set metric to `True` in the `weather.py`. As well I like the order of the applications listed in `code.py`, but this can always be changed.
 
@@ -32,7 +32,7 @@ Until I can find someone to tell me a more efficient way here's my suggestion:
 
 Sadly this device has only about __1 MB__ of on-board storage, so slowly copying things over are required as there appears to be __*junk*__ and temporary files generated if you try a quick dump.
 
-### How to Use Magtag 
+### How to Use Magtag
 
 I did not understand the instructions on the original project website and really have to read through some of the code.
 
@@ -49,4 +49,3 @@ So I'll try to do better.
 5. Hold down first and last buttons for 5 seconds. Sometimes you have to try a few times.
 
 6. If you reset again without holding a button the last selected project will be opened. __IF__ there's a problem with loading something, you will get the first project in the list. I had to change the order one at a time to confirm each project loaded correctly and worked as intended.  
-
